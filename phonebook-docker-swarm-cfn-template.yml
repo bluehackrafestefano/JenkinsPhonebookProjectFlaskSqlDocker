@@ -198,7 +198,6 @@ Resources:
           unzip awscliv2.zip
           ./aws/install
           yum install amazon-ecr-credential-helper -y
-          pip install ec2instanceconnectcli
           mkdir -p /home/ec2-user/.docker
           cd /home/ec2-user/.docker
           echo '{"credsStore": "ecr-login"}' > config.json

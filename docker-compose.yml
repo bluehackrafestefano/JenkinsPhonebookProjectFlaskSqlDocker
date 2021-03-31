@@ -7,7 +7,7 @@ services:
       MYSQL_ROOT_PASSWORD: P123456p
       MYSQL_DATABASE: phonebook_db
       MYSQL_USER: admin
-      MYSQL_PASSWORD: Password1234
+      MYSQL_PASSWORD: Clarusway_1
     volumes:
       - db-data:/var/lib/mysql
     networks:
@@ -17,7 +17,7 @@ services:
         target: /docker-entrypoint-initdb.d/init.sql
 
   app-server:
-    image: 215550833360.dkr.ecr.us-east-1.amazonaws.com/rafe/phonebook-app:latest
+    image: 215550833360.dkr.ecr.us-east-1.amazonaws.com/rafe-repo/phonebook-app:latest
     deploy:
       mode: global
       update_config:
